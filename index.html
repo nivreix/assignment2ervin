@@ -36,19 +36,31 @@
 
 </body>
         
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS file -->
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <p>This is a paragraph styled by an external CSS file.</p>
-</body>
 
 </p>
     <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
     <p class="js-question"></p>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <button id="myButton">Click Me!</button>
+    <p id="message"></p>
+
+    <!-- Inline JavaScript -->
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('message').innerText = 'Button was clicked!';
+        });
+    </script>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
 </body>
 </html>
